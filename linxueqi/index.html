@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>林雪琪</title>
+	
+    <style type="text/css">
+        *{padding: 0;
+        margin: 0;}
+        body,html{height:100%;}
+        body{background-image: url("images/beijing.jpg");background-size: 100% 100%;}
+        #box{width: 280px;
+            height: 400px;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top:0;
+            bottom: 0;
+            margin: auto;
+            transform-style: preserve-3d;
+            transform: rotateX(0deg) rotateY(0deg);
+            animation: go 45s linear infinite;
+           }
+        #box img{width: 200px;
+                 height: 300px;
+                 position: absolute;
+                 left: 0;
+                 top: 0;
+        }
+		
+		
+        #box img:nth-child(1){
+            transform: rotateY(0deg) translateZ(400px);
+			}
+        #box img:nth-child(2){
+            transform: rotateY(36deg) translateZ(400px);
+			}
+        #box img:nth-child(3){
+            transform: rotateY(72deg) translateZ(400px);}
+        #box img:nth-child(4){
+            transform: rotateY(108deg) translateZ(400px);
+			}
+        #box img:nth-child(5){
+            transform: rotateY(144deg) translateZ(400px);}
+        #box img:nth-child(6){
+            transform: rotateY(180deg) translateZ(400px);}
+        #box img:nth-child(7){
+            transform: rotateY(216deg) translateZ(400px);}
+        #box img:nth-child(8){
+            transform: rotateY(252deg) translateZ(400px);}
+        #box img:nth-child(9){
+            transform: rotateY(288deg) translateZ(400px);}
+        #box img:nth-child(10){
+            transform: rotateY(324deg) translateZ(400px);}
+		@keyframes go {
+		   0%{transform: rotateX(0deg) rotateY(0deg);}
+		    25%{transform: rotateX(20deg) rotateY(180deg);}
+		    50%{transform: rotateX(0deg) rotateY(360deg);}
+		    75%{transform: rotateX(-20deg) rotateY(540deg);}
+		    100%{transform: rotateX(0deg) rotateY(720deg);}
+		
+		}
+		
+		.textcontent{
+			position: relative;
+			width: 100%;
+			height: 100px;
+			color: #FFFFff;
+			text-align: center;
+		}
+		
+		.numbertable{
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		
+		.textnumber {
+			padding-left: 0px;
+			font-size: 80px;
+			width: 220px;
+			color: #FFFFFF;
+		}
+		.textabc {
+			padding: 5px;
+			font-size: 40px;
+			color: #F0C311;
+		}
+		
+		.texttitle{
+			font-size: 80px;
+			color: #FFFFFF;
+		}
+		.textblod{
+			font-size: 100px;
+			color: #F0C311;
+		}
+		.textaini{
+			position: absolute;
+			width: 100%;
+			height: 100px;
+			bottom: 15%;
+			font-size: 60px;
+			text-align: center;
+			color: #FFFFFF;
+		}
+		
+		.Flex-color-Special
+		 {
+		    text-shadow: 0 0 10px #fff,
+		               0 0 10px  #fff,
+		               0 0 20px  #fff,
+		               0 0 30px  #00c0ef,
+		               0 0 50px  #00c0ef,
+		               0 0 70px  #00c0ef,
+		               0 0 80px #00c0ef,
+		               0 0 110px #00c0ef;
+		  }
+		 
+		 
+		@-webkit-keyframes fadeIn {
+		0% {
+		opacity: 1; /*初始状态 透明度为0*/
+		}
+		50% {
+		opacity: 0.5; /*中间状态 透明度为0*/
+		}
+		100% {
+		opacity: 1; /*结尾状态 透明度为1*/
+		}
+		}
+		 
+		.Flex-fadeIn
+		{-webkit-animation-name: fadeIn; /*动画名称*/
+		-webkit-animation-duration: 2.5s; /*动画持续时间*/
+		-webkit-animation-iteration-count: infinite; /*动画次数 infinite 为无限 否则就是具体次数*/
+		-webkit-animation-delay: 0s; /*延迟时间*/
+		}
+    </style>
+	<script type="text/javascript" src="./js/time.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+	
+</head>
+	<body>
+		
+		<div class="demo"></div>
+		<div id="box">
+			
+		    <img src="https://s2.ax1x.com/2020/03/10/8FVxeK.jpg">
+		    <img src="https://s2.ax1x.com/2020/03/10/8FVzdO.jpg">
+		    <img src="https://s2.ax1x.com/2020/03/10/8FZSoD.jpg">
+		    <img src="https://s2.ax1x.com/2020/03/10/8FZCJH.png">
+		    <img src="https://s2.ax1x.com/2020/03/10/8FZ9Fe.jpg">
+		    <img src="https://s2.ax1x.com/2020/03/10/8FZPWd.jpg">
+		    <img src="https://s2.ax1x.com/2020/03/10/8FZFSA.jpg">
+		    <img src="https://s2.ax1x.com/2020/03/10/8FZAyt.jpg">
+		    <img src="https://s2.ax1x.com/2020/03/10/8FZEOP.jpg">
+		    <img src="https://s2.ax1x.com/2020/03/10/8FZZef.jpg">
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fireworks.js"></script>
+		<script type="text/javascript">
+			$('.demo').fireworks({
+				sound: false,
+				opacity: 0.9,
+				width: '100%',
+				height: '100%'
+			});
+			var intkk = setInterval("clock()",1000);
+			function clock()
+			{
+				var timearray = get_time_diff();
+				var d = document.getElementById("day");
+				var hour = document.getElementById("hour");
+				var min = document.getElementById("min");
+				var s = document.getElementById("seconds");
+				d.innerText = timearray[0];
+				hour.innerText = timearray[1];
+				min.innerText = timearray[2];
+				s.innerText = timearray[3];
+				
+			}
+			clock();
+		</script>
+		
+		<div class="textcontent">
+			<div style="margin-top: 100px;margin-bottom: 50px;">
+				<span class="textblod">梦</span>
+				<span class="texttitle">今天是我们相识</span>
+			</div>
+			<table class="numbertable" >
+				<tr>
+					<th>
+						<div id="day" class="textnumber">000</div>
+					</th>
+					<th>
+						<div id="hour" class="textnumber">00</div>
+					</th>
+					<th>
+						<div id="min" class="textnumber">00</div>
+					</th>
+					<th>
+						<div id="seconds" class="textnumber">00</div>
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<div class="textabc"> DAYS  </div>
+					</td>
+					<td>
+						<div class="textabc"> HOURS </div>
+					</td>
+					<td>
+						<div class="textabc"> MINUTES </div>
+					</td>
+					<td>
+						<div class="textabc"> SECONDS </div>
+					</td>
+				</tr>
+			</table>
+			
+		</div>
+		<div class="textaini Flex-color-Special Flex-fadeIn">
+			我喜欢你,认真且怂,从一而终
+		</div>
+	</body>
+</html>
