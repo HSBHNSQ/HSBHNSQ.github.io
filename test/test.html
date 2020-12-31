@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="dns-prefetch" href="//dl2.kuaigames.com">
+    <link rel="dns-prefetch" href="//dl4.kuaigames.com">
+    <link rel="dns-prefetch" href="//dl8.kuaigames.com">
+    <link rel="dns-prefetch" href="//clk.kuaigames.com">
+    <link rel="dns-prefetch" href="//stat.kuaigames.com">
+    <link rel="stylesheet" href="//img.kuaigames.com/upload/image/2019/07/1563351616/index.css">
+    <title></title>
+    <style>
+        .main{position: relative;width: 100%;}
+        .btn1{position: absolute;left: 25%;bottom: 3%;width: 50%;z-index: 10;animation: btn1 1.3s infinite;}
+        .btn2{position: absolute;left: 25%;bottom: 3%;width: 50%;z-index: 10;}
+        .btn3{position: absolute;left: 25%;bottom: 3%;width: 50%;z-index: 10;}
+        .btn4{position: absolute;left: 25%;bottom: 5%;width: 50%;z-index: 10;}
+        @keyframes btn1 {
+            0%{transform: scale(1);}
+            50%{transform: scale(1.2);}
+            100%{transform: scale(1);}
+        }
+        </style>  
+</head>
+<body>
+    <div class="wrap ct">
+
+        <!-- 热点图外框,这个不能少 -->
+    <div class="rdt"  id="heatmapContainer">
+
+            <div class="main">
+                <a href="https://apps.apple.com/cn/app/id1466345645">
+                    <img src="//img.kuaigames.com/upload/image/2020/08/1597739318/images/top.png" alt="废土探险" class="img100">
+                </a>
+            </div>
+
+            <div class="main">
+                <a href="https://apps.apple.com/cn/app/id1466345645">
+                    <img src="//img.kuaigames.com/upload/image/2020/08/1597739318/images/1.jpg" alt="废土探险" class="img100">
+                </a>
+
+                <div class="btn1">
+                    <a href="https://apps.apple.com/cn/app/id1466345645">
+                        <img src="//img.kuaigames.com/upload/image/2020/08/1597739318/images/btn_1.png" alt="" class="img100">
+                    </a>
+                </div>
+            </div>
+
+            <div class="main">
+                <a href="https://apps.apple.com/cn/app/id1466345645">
+                    <img src="//img.kuaigames.com/upload/image/2020/08/1597739318/images/2.gif" alt="废土探险" class="img100">
+                </a>
+
+                <div class="btn2">
+                    <a href="https://apps.apple.com/cn/app/id1466345645">
+                        <img src="//img.kuaigames.com/upload/image/2020/08/1597739318/images/btn_2.png" alt="" class="img100">
+                    </a>
+                </div>
+            </div>
+
+            <div class="main">
+                <a href="https://apps.apple.com/cn/app/id1466345645">
+                    <img src="//img.kuaigames.com/upload/image/2020/08/1597739318/images/3.gif" alt="废土探险" class="img100">
+                </a>
+
+                <div class="btn3">
+                    <a href="https://apps.apple.com/cn/app/id1466345645">
+                        <img src="//img.kuaigames.com/upload/image/2020/08/1597739318/images/btn_3.png" alt="" class="img100">
+                    </a>
+                </div>
+            </div>
+
+            <div class="main">
+                <a href="https://apps.apple.com/cn/app/id1466345645">
+                    <img src="//img.kuaigames.com/upload/image/2020/08/1597739318/images/4.gif" alt="废土探险" class="img100">
+                </a>
+
+                <div class="btn4">
+                    <a href="https://apps.apple.com/cn/app/id1466345645">
+                        <img src="//img.kuaigames.com/upload/image/2020/08/1597739318/images/btn_4.png" alt="" class="img100">
+                    </a>
+                </div>
+            </div>
+            
+            <p id="landingid" hidden>__LANDINGID__</p>
+   
+    </div> <!--←←到这是热点图的框--> 
+</div><!--←←到这是wrap的框-->
+
+<!-- 这里是JQ方法,和游戏下载方法. -->
+    <script src="//img.kuaigames.com/upload/image/2019/07/1562138998/heatmap.min.js"></script><!--热点图插件-->
+    <script src="//img.kuaigames.com/upload/image/2017/06/1497508585/jquery-3.2.1.min.js"></script><!-- JQ插件方法-->
+    <script src="//img.kuaigames.com/upload/image/2017/06/1497513379/autofit.js"></script><!--游戏下载链接-->
+    <script src="//img.kuaigames.com/upload/image/2019/07/1563351266/data.js"></script><!--收集显示数据-->
+    <script src="//img.kuaigames.com/upload/image/2019/07/1563351318/rem.js"></script><!--页面自适应-->
+    <!-- 这里是页面的跳动文字设置 -->
+    <script>
+      
+    </script>
+    <script>
+        //  $('a').click(function (e) {
+        //     alert(e.href);
+        //     window.parent.location.href = "https:https://apps.apple.com/cn/app/id1466345645";
+            
+
+        // })
+        //
+        //跳动文字
+        //蜀山仙魔录手游｜3D仙侠强PK｜装备能卖钱｜
+        //戮仙破天手游｜赚钱的游戏｜可交易强PK｜
+        //最佳阵容｜足球竞技手游｜大牌球星随心选｜
+        step = 0
+        function flash_title() {
+            step++
+            if (step == 3) {
+                step = 1
+            }
+            if (step == 1) {document.title = '废土探险'}
+            if (step == 2) {document.title = '化身末日英雄,带领残存人类保卫家园!'}
+            setTimeout("flash_title()", 380);
+        }
+        flash_title();
+        //
+    </script>
+</body>
+</html>
